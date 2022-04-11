@@ -78,26 +78,13 @@ function App() {
 
   return (
     <div className="App">
-      {isLoading ? (
-        <h1>Loading</h1>
-      ) : (
-        <>
-          {/* TODO: Need to add pokemon logo in header */}
-          {/* TODO: Need to add filter function use Monster Rolodex example  */}
-          <Header />
-          <Search
-            onChangeHandler={onSearchChange}
-            placeholder="Search Pokemon"
-            className="Search__box"
-          />
-          <CardList pocketMonsters={filteredPokemon} />
-          {/* <div className="grid-container">
-            {pokemonData.map((poke, i) => {
-              return <Card key={i} poke={poke} />;
-            })}
-          </div> */}
-        </>
-      )}
+      <Header />
+      <Search
+        onChangeHandler={onSearchChange}
+        placeholder="Search Pokemon"
+        className="Search__box"
+      />
+      <CardList isLoading={isLoading} pocketMonsters={filteredPokemon} />
     </div>
   );
 }

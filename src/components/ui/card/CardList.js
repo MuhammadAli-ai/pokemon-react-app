@@ -1,14 +1,19 @@
 import React from "react";
 
+import Spinner from "../spinner/Spinner";
 import Card from "./Card";
 
-const CardList = ({ pocketMonsters }) => (
-  <div className="grid-container">
-    {pocketMonsters.map((poke, i) => {
-      return <Card key={i} poke={poke} />;
-    })}
-  </div>
-);
+const CardList = ({ pocketMonsters, isLoading }) => {
+  return isLoading ? (
+    <Spinner />
+  ) : (
+    <div className="grid-container">
+      {pocketMonsters.map((poke, i) => {
+        return <Card key={i} poke={poke} />;
+      })}
+    </div>
+  );
+};
 
 export default CardList;
 
