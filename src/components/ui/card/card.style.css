@@ -13,7 +13,12 @@ p {
 
 .Card__img img {
   width: 100px;
+  height: 100px;
   padding-top: 5px;
+}
+
+.Card__img_alternative {
+  max-height: 100px;
 }
 .Card__types {
   display: flex;

@@ -6,8 +6,25 @@ const Card = ({ poke }) => {
   return (
     <div className="Card">
       <div className="Card__img">
-        <img src={poke.sprites.front_default} alt={poke.name} />
-        <img src={poke.sprites.back_default} alt={poke.name} />
+        <img
+          className="Card__img_sprites"
+          src={poke.sprites.front_default}
+          alt={`front ${poke.name}`}
+        />
+        {poke.sprites.back_default && (
+          <img
+            className="Card__img_sprites"
+            src={poke.sprites.back_default}
+            alt={`back ${poke.name}`}
+          />
+        )}
+        {poke.sprites.other.dream_world.front_default && (
+          <img
+            className="Card__img_alternative"
+            src={poke.sprites.other.dream_world.front_default}
+            alt={`Offical Art${poke.name}`}
+          />
+        )}
       </div>
       <div className="Card__name">{poke.name}</div>
       <div className="Card__types">

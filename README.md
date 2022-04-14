@@ -6,18 +6,13 @@ I included the additional query of limiting a 1000 Pokemon to the initial search
 
 ## My Customisations
 
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$
-
 Initially it will show the full list of Pokemon available then users can view limited to the first 1000 Pokemon available..
 
 ![Pokemon Cards](./src/img/pokemonCards.png)
 
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$
 Users can then search through the different Pokemon present via the search bar as shown below.
 
 ![Search Bar to find Pokemon](./src/img/searchBarPokemon.png)
-
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$
 
 Then the options of Pokemon shown will be limited that have in their name the order of letters typed into the Search Bar as shown below.
 

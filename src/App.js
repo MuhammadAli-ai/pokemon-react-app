@@ -71,7 +71,6 @@ function App() {
       return pika.name.includes(searchField);
     });
     setFilteredPokemon(newFilteredPokemon);
-    console.log(filteredPokemon);
   }, [pokemonData, searchField]);
 
   console.log(pokemonData);
@@ -81,9 +80,15 @@ function App() {
       <Header />
       <Search
         onChangeHandler={onSearchChange}
-        placeholder="Search Pokemon"
+        placeholder="Search Your Favourite Pokemon!"
         className="Search__box"
       />
+      <div className="Cred__wrapper">
+        <p className="Cred">
+          Created using the <strong>https://pokeapi.co/</strong> API
+        </p>
+      </div>
+
       <CardList isLoading={isLoading} pocketMonsters={filteredPokemon} />
     </div>
   );
