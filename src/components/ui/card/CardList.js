@@ -21,7 +21,8 @@ export default CardList;
 // !edit the search box and making it more appealing than
 // !watch that monsters video and write down what they did and how and make sense of it.
 // !Write this up maybe post on the reddit reactjs page and
-// TODO make search bar better looking
 // TODO can you make lightmode and darkMode
 // TODO figure out how to filter by pokemon type?
+// TODO center search bar no matter the width of page and
+// TODO How to deploy and tweet it out
 //

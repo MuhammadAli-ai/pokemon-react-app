@@ -10,25 +10,10 @@
   grid-gap: 10px;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.btn button {
-  border-style: none;
-  padding: 5px 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  background: #30a7d7;
-  color: #fff;
-  font-size: 1em;
-}
 header {
   height: 600px;
   margin-top: -150px;
-  border: 1px solid red;
+  margin-bottom: -120px;
 }
 
 header img {
@@ -39,4 +24,18 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.SearchBarWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.Search__box {
+  width: 500px;
+  text-align: center;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid #6390f0;
+  font-weight: bold;
 }
