@@ -44,6 +44,8 @@ Large Screen Size
 
 Incorporate React Styled Components and include some animation as the website is fairly static.
 
+Perhaps incorporate Tailwind to make it more aesthetically pleasing.
+
 Make the Heading more aesthetic and a background with more color.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
