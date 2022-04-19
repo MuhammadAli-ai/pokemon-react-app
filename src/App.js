@@ -11,9 +11,12 @@ import "./App.css";
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
   const [isLoading, setIsLoading] = useState("true");
-  const generalURL = "https://pokeapi.co/api/v2/pokemon/?limit=1000";
+
   const [filteredPokemon, setFilteredPokemon] = useState(pokemonData);
   const [searchField, setSearchField] = useState("");
+
+  // inital URL limit pokemon to 1000
+  const generalURL = "https://pokeapi.co/api/v2/pokemon/?limit=1000";
 
   // useEffect to fetch list of pokemon and urls
   // then await fetch call and data and place it in async await
@@ -28,27 +31,6 @@ function App() {
     fetchData();
   }, []);
 
-  // console.log("render APP");
-
-  /**
-   * * above returns array full of entries for below
-  0:
-    name: "bulbasaur"
-    url: "https://pokeapi.co/api/v2/pokemon/1/"
-
-  * * Need to now iterate through the urls in this array 
-  * * and call fetch on etch of these urls to get key info for each pokemon
-
-  0:
-    abilities: (2) [{…}, {…}]
-    base_experience: 64
-    forms: [{…}]
-    height: 7
-    held_items: []
-    id: 1
-    name: "bulbasaur"
-   */
-
   // func that awaits array of Promises All on an array of objs for each pokemon made by  mapping initial fetch urls and running getPokemon func on them each
   const loadingPokemon = async (data) => {
     let _pokemonData = await Promise.all(
@@ -61,11 +43,13 @@ function App() {
     setPokemonData(_pokemonData);
   };
 
+  // onChange Event func to set
   function onSearchChange(event) {
     const searchFieldString = event.target.value.toLowerCase();
     setSearchField(searchFieldString);
   }
 
+  // useEffect Hook with func to filter PokemonData by searchField
   useEffect(() => {
     const newFilteredPokemon = pokemonData.filter((pika) => {
       return pika.name.includes(searchField);
@@ -84,8 +68,13 @@ function App() {
         className="Search__box"
       />
       <div className="Cred__wrapper">
-        <p className="Cred">
-          Created using the <strong>https://pokeapi.co/</strong> API
+        {/* <p ClassName="Cred">
+          Developed by{" "}
+          <a href="https://github.com/MuhammadAli-ai">Muhammad Khaife Ali</a>
+        </p> */}
+        <p className="Cred__Github">
+          Developed by{" "}
+          <a href="https://github.com/MuhammadAli-ai">Muhammad Khaife Ali</a>
         </p>
       </div>
 

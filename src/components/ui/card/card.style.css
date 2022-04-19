@@ -1,3 +1,5 @@
+/* ------------- card ------------- */
+
 p {
   margin: 0;
 }
@@ -5,6 +7,10 @@ p {
 .Card {
   background: white;
   border-radius: 10px;
+  border-left: 3px solid #a33ea1;
+  border-top: 3px solid #ee8130;
+  border-right: 3px solid #c22e28;
+  border-bottom: 3px solid #6f35fc;
 }
 
 .Card__img {
@@ -33,6 +39,7 @@ p {
   font-size: 20px;
 }
 
+/* special colors matched to the different types */
 .poison {
   background: #a33ea1;
 }
@@ -105,8 +112,6 @@ p {
   background: #735797;
 }
 
-/* grass, poison, fire, flying, water, bug, normal, electric, ground, fairy, fighting, psychic, rock, ice, dragon  */
-
 .Card__name {
   text-align: center;
   text-transform: capitalize;
@@ -128,9 +133,53 @@ p {
   font-size: 20px;
 }
 
-.center {
-  margin-left: 120px;
+.title_stat {
+  font-weight: 700;
   font-size: 20px;
+  text-align: center;
+}
+
+.title_stat_abilities {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.stats {
+  font-size: 10px;
+  color: #fff;
+  padding-left: 3px;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 250px;
+  max-width: 600px;
+  height: 25px;
+  padding: 5px;
+  background: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.bar {
+  height: 15px;
+  position: relative;
+  border-radius: 5px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  font-size: 10px;
+  color: #fff;
 }
 
 .Card__multiple--abilities {

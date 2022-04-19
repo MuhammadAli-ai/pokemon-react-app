@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
 }
 
 .grid-container {
@@ -10,10 +16,12 @@
   grid-gap: 10px;
 }
 
+/* ------------- header ------------- */
+
 header {
   height: 600px;
   margin-top: -150px;
-  margin-bottom: -120px;
+  margin-bottom: -150px;
 }
 
 header img {
@@ -25,6 +33,8 @@ header img {
   align-items: center;
   justify-content: center;
 }
+
+/* ------------- Search Bar ------------- */
 
 .SearchBarWrap {
   display: flex;
@@ -46,6 +56,11 @@ header img {
   margin-bottom: 20px;
 }
 
-.Cred {
-  font-size: 8px;
+.Cred__Github {
+  text-decoration: none;
+  font-size: 12px;
+  text-decoration: nou;
+}
+a:link {
+  text-decoration: none;
 }
