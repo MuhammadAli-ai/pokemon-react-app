@@ -86,7 +86,7 @@ const Card = ({ poke }) => {
               background: "#f7d02c",
             }}
           >
-            <p className="stats">Sped: {poke.stats[5].base_stat}</p>
+            <p className="stats">Spd: {poke.stats[5].base_stat}</p>
           </div>
         </div>
         <div class="health-bar" data-total="1000" data-value="1000">
