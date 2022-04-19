@@ -64,3 +64,8 @@ header img {
 a:link {
   text-decoration: none;
 }
+
+.loading {
+  font-size: 60px;
+  text-align: center;
+}

@@ -57,8 +57,6 @@ function App() {
     setFilteredPokemon(newFilteredPokemon);
   }, [pokemonData, searchField]);
 
-  console.log(pokemonData);
-
   return (
     <div className="App">
       <Header />
@@ -68,10 +66,6 @@ function App() {
         className="Search__box"
       />
       <div className="Cred__wrapper">
-        {/* <p ClassName="Cred">
-          Developed by{" "}
-          <a href="https://github.com/MuhammadAli-ai">Muhammad Khaife Ali</a>
-        </p> */}
         <p className="Cred__Github">
           Developed by{" "}
           <a href="https://github.com/MuhammadAli-ai">Muhammad Khaife Ali</a>
