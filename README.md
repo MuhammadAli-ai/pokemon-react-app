@@ -5,7 +5,7 @@
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-This is a simple application that uses the following Pokemon API: "https://pokeapi.co/api/v2/pokemon/"
+This is a simple application that uses the [Pokemon API](https://pokeapi.co/docs/v2)
 
 List of Pokemon on the basis of React.
 
