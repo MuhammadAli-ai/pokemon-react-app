@@ -47,9 +47,9 @@ Medium Screen Size
 Large Screen Size
 ![Large Screen Size](./src/img/ScreenSizeLarge.png)
 
-## Live Website
+## Live Demo
 
-[Live Pokemon Website](https://pokemon-data-react.netlify.app/)
+[Live Demo Pokemon Website](https://pokemon-data-react.netlify.app/)
 
 ## Future changes
 
