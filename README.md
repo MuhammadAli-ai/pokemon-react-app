@@ -1,6 +1,12 @@
 # Pokemon React App
 
+[![Travis](https://img.shields.io/travis/alik0211/pokedex/master.svg?style=flat-square)](https://travis-ci.com/alik0211/pokedex)
+[![Dependency Status](https://img.shields.io/david/alik0211/pokedex.svg?label=deps&style=flat-square)](https://david-dm.org/alik0211/pokedex)
+[![devDependency Status](https://img.shields.io/david/dev/alik0211/pokedex.svg?label=devDeps&style=flat-square)](https://david-dm.org/alik0211/pokedex?type=dev)
+
 This is a simple application that uses the following Pokemon API: "https://pokeapi.co/api/v2/pokemon/"
+
+List of Pokemon on the basis of React.
 
 I included the additional query of limiting a 1000 Pokemon to the initial search "?limit=1000".
 
@@ -42,10 +48,14 @@ Large Screen Size
 
 ## Future changes
 
-Incorporate React Styled Components and include some animation as the website is fairly static.
+- Incorporate React Styled Components and include some animation as the website is fairly static.
+- Include Additional Information when card is clicked i.e evolution chain.
+- Include Pokemon SVG Icons.
+- Include Dark Mode Toggle.
+- Better Lazy Loading of Images.
+- Make it possible to search Pokemon by Type.
+- Incorporate Scroll to Top.
 
-Perhaps incorporate Tailwind to make it more aesthetically pleasing.
+## Credits
 
-Make the Heading more aesthetic and a background with more color.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Pokemon API](https://pokeapi.co/docs/v2)
