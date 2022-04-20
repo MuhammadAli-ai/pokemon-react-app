@@ -13,7 +13,7 @@ I included the additional query of limiting a 1000 Pokemon to the initial search
 
 ## My Customisations
 
-Users will see a Loading Screen while the data is fetched from the Pokemon API.
+Users will see a Loading Screen while the data is fetched from the [Pokemon API](https://pokeapi.co/docs/v2).
 ![Loading Screen](./src/img/LoadingScreen.png)
 
 Initially it will show the full list of Pokemon available then users can view limited to the first 1000 Pokemon available in individual cards.
